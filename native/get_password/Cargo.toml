@@ -1,0 +1,15 @@
+[package]
+name = "get_password"
+version = "0.8.0"
+authors = []
+edition = "2024"
+
+[lib]
+name = "get_password"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rpassword = "7.3.1"
+rustix = { version = "1.1.3", features = ["termios"] }
+rustler = "0.37.2"
